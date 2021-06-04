@@ -8,15 +8,12 @@ import React from "react";
  * StoryList -> Story
  */
 class Story extends React.Component {
-  constructor(props) {
-    super(props);
-    this.story = props.story;
-  }
+  
   render() {
-
+    const { title } = this.props.story;
     return <div>
         <li>
-          {this.story.title}
+          {title}
         </li>
       </div>
   }
